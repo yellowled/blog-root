@@ -1,0 +1,5 @@
+
+# My 301 redirects ----------------------------------------------------
+Redirect 301 /amazon http://www.amazon.de/wishlist/17K9U8IYN1LP4/
+Redirect 301 /templates.html https://github.com/yellowled/serendipity-themes
+Redirect 301 /ports.html https://github.com/yellowled/serendipity-ports
