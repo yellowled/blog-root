@@ -1,0 +1,16 @@
+# robotstxt.org/
+Sitemap: http://yellowled.de/sitemap.xml.gz
+
+User-agent: *
+Disallow: /ai-cache/
+Disallow: /bundled-libs/
+Disallow: /deployment/
+Disallow: /docs/
+Disallow: /htmlarea/
+Disallow: /img/
+Disallow: /include/
+Disallow: /lang/
+Disallow: /plugins/
+Disallow: /sql/
+Disallow: /templates_c/
+Disallow: /tests/
