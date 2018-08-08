@@ -5,8 +5,10 @@ ErrorDocument 404 /index.php
 DirectoryIndex /index.php
 Options -MultiViews
 
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
+RewriteRule ^plugins/.+/documentation.*\.html - [L]
 RewriteRule ^serendipity_admin.php serendipity_admin.php [NC,L,QSA]
 RewriteRule ^((archiv/([0-9]+)/[0-9a-z\.\_!;,\+\-\%]+\.html)/?) index.php?/$1 [NC,L,QSA]
 RewriteRule ^(autor/([0-9]+)/[0-9a-z\.\_!;,\+\-\%]+) index.php?/$1 [NC,L,QSA]
@@ -29,8 +31,8 @@ RewriteRule ^(serendipity\.css|serendipity_admin\.css)$ index.php?url=/$1 [L,QSA
 RewriteRule ^(serendipity\.js|serendipity_admin\.js)$ index.php?url=/$1 [L,QSA]
 RewriteRule ^index\.(html?|php.+) index.php?url=index.html [L,QSA]
 RewriteRule ^htmlarea/(.*) htmlarea/$1 [L,QSA]
-#RewriteCond %{REQUEST_URI} !-U
 RewriteRule (.*\.html?) index.php?url=/$1 [L,QSA]
+</IfModule>
 
 <Files *.tpl.php>
     deny from all
@@ -51,5 +53,4 @@ RewriteRule (.*\.html?) index.php?url=/$1 [L,QSA]
 <Files *.db>
     deny from all
 </Files>
-
 # END s9y
