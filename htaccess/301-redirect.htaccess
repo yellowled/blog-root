@@ -5,4 +5,4 @@ Redirect 301 /templates.html https://github.com/yellowled/serendipity-themes
 Redirect 301 /ports.html https://github.com/yellowled/serendipity-ports
 Redirect 301 /wke2014 https://speakerdeck.com/yellowled/processwire-ein-cms-voller-freiheiten
 Redirect 301 /wke2016 https://speakerdeck.com/yellowled/styleguides-fur-alle-s
-# Redirect 301 /wke2018
+Redirect 301 /wke2018 https://speakerdeck.com/yellowled/agiles-arbeiten
